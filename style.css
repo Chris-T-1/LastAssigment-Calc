@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4e1c1; /* Soft warm peach background for the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark gray text for readability */
+}
+
+.container {
+    display: flex;
+    gap: 30px; /* Adds space between calculator boxes */
+    padding: 30px;
+    background-color: #c8b9a6; /* Warm light brown for the container background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.calculator-box {
+    background-color: #d9b99b; /* Soft warm tan */
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.calculator-img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #4e4a40; /* Muted dark brown for text */
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #8a7f6d; /* Soft olive brown for buttons */
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6c634e; /* Darker brown olive on hover */
+}
