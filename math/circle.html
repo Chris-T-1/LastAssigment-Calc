@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/main.js" defer></script>
+    <title>Circle Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Single Calculator Box -->
+        <div class="calculator">
+            <img class="calculator-img" src="https://www.bwseducationconsulting.com/wp-content/uploads/2020/08/bws-maths-tutoring.jpg" alt="Circle Image">
+            <h2>Circle Area Calculator</h2>
+            <div>
+                <input type="number" id="radius" placeholder="Enter radius (r)">
+                <p>or</p>
+                <input type="number" id="diameter" placeholder="Enter diameter (d)">
+            </div>
+            <output id="result" placeholder="Area will appear here"></output>
+            <div class="button_container">
+                <a href="/index.html"><button class="function_button">Go back</button></a>
+                <button class="function_button" onclick="calculateCircle()">Calculate</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

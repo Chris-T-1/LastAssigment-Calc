@@ -31,6 +31,14 @@ body {
     width: 250px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
+.calculator {
+    background-color: #d9b99b; /* Soft warm tan */
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
 
 .calculator-img {
     width: 100%;
@@ -61,4 +69,45 @@ button {
 
 button:hover {
     background-color: #6c634e; /* Darker brown olive on hover */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input, output {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    height: 30px;
+    text-align: center;
+}
+
+/* Styling för knappar */
+.function_button {
+    padding: 10px 20px;
+    background-color: #8a7f6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.function_button:hover {
+    background-color: #6c634e;
+}
+
+/* Layout för knapparna */
+.button_container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
 }
