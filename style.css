@@ -72,7 +72,7 @@ button:hover {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;  
     color: white;
 }
 
@@ -107,7 +107,7 @@ input, output {
 /* Layout för knapparna */
 .button_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;  /* Eller space-around om du föredrar det */
     gap: 10px;
-    margin-top: 15px;
+    width: 100%;
 }

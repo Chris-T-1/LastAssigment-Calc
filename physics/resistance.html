@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <script src="/main.js" defer></script>
+    <title>Resistance Calculator</title>
 </head>
 <body>
-    <h1> Resistance</h1>
+    <div class="container">
+        <!-- Single Calculator Box for Resistance -->
+        <div class="calculator">
+            <img class="calculator-img" src="https://t4.ftcdn.net/jpg/01/72/80/01/360_F_172800105_5uog5sDw7v1OM76f8VjCoG4pZQdsTGDO.jpg" alt="Resistance Image">
+            <h2>Resistance (R) Calculator</h2>
+            <div>
+                <input type="number" id="voltage" placeholder="Enter voltage (U)">
+                <input type="number" id="current" placeholder="Enter current (I)">
+            </div>
+            <output id="result" placeholder="Resistance will appear here"></output>
+            <div class="button_container">
+                <a href="/index.html"><button class="function_button">Go back</button></a>
+                <button class="function_button" onclick="calculateResistance()">Calculate</button>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>

@@ -28,3 +28,28 @@ function calculateCircle() {
         document.getElementById('result').textContent = "Please enter a valid radius or diameter.";
     }
 }
+
+function calculateVoltage() {
+    const resistance = +document.getElementById('resistance').value;
+    const current = +document.getElementById('current').value;
+
+    const voltage = (resistance > 0 && current > 0) ? resistance * current : "Invalid input";
+    document.getElementById('result').textContent = `Voltage: ${voltage} V`;
+}
+
+function calculateResistance() {
+    const voltage = +document.getElementById('voltage').value;
+    const current = +document.getElementById('current').value;
+
+    const resistance = (voltage > 0 && current > 0) ? voltage / current : "Invalid input";
+    document.getElementById('result').textContent = `Resistance: ${resistance} Ω`;
+}
+
+function calculateCurrent() {
+    const voltage = +document.getElementById('voltage').value;
+    const resistance = +document.getElementById('resistance').value;
+
+    const current = (voltage > 0 && resistance > 0) ? voltage / resistance : "Invalid input";
+    document.getElementById('result').textContent = `Current: ${current} A`;
+}
+
