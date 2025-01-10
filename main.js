@@ -54,7 +54,7 @@ function calculateCurrent() {
     const voltage = +document.getElementById('voltage').value;
     const resistance = +document.getElementById('resistance').value;
 
-    const current = (voltage > 0 && resistance > 0) ? `${voltage / resistance} A : "Invalid input";
+    const current = (voltage > 0 && resistance > 0) ? `${voltage / resistance} A` : "Invalid input";
     document.getElementById('result').textContent = `Current: ${current}`;
 }
 
