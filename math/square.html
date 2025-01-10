@@ -17,10 +17,17 @@
                 <input type="number" id="base" placeholder="Enter length (b)">
                 <input type="number" id="height" placeholder="Enter width (h)">
             </div>
+            <!-- Dropdown for Unit Selection -->
+            <label for="unit">Choose a unit:</label>
+            <select id="unit">
+                <option value="cm²">cm²</option>
+                <option value="m²">dm²</option>
+                <option value="m²">m²</option>
+            </select>
             <output id="result" placeholder="Area will appear here"></output>
             <div class="button_container">
-                <a href="/index.html"><button class="function_button">Go back</button></a>
                 <button class="function_button" onclick="calculateSquare()">Calculate</button>
+                <a href="/index.html"><button class="function_button">Go back</button></a>
             </div>
         </div>
     </div> 

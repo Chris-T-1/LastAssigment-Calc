@@ -94,6 +94,7 @@ input, output {
     font-size: 1em;
     height: 30px;
     text-align: center;
+    margin-top: 5%;
 }
 
 /* Styling for buttons */
@@ -120,3 +121,4 @@ input, output {
     justify-content: center;
     width: 100%;
 }
+
