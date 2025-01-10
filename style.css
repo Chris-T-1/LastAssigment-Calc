@@ -12,32 +12,40 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
     color: #333; /* Dark gray text for readability */
+    padding: 10px;
 }
 
-.container {
+.container_index {
     display: flex;
-    gap: 30px; /* Adds space between calculator boxes */
-    padding: 30px;
+    flex-wrap: wrap; /* Allows items to wrap naturally */
+    gap: 20px; /* Adds space between calculator boxes */
+    padding: 20px;
     background-color: #c8b9a6; /* Warm light brown for the container background */
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px; /* Restricts container width */
+    width: 100%; /* Full width on smaller screens */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap naturally */
+    gap: 20px; /* Adds space between calculator boxes */
+    padding: 20px;
+    background-color: #c8b9a6; /* Warm light brown for the container background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 350px; /* Restricts container width */
+    width: 100%; /* Full width on smaller screens */
 }
 
-.calculator-box {
+.calculator-box, .calculator {
     background-color: #d9b99b; /* Soft warm tan */
     border-radius: 8px;
     text-align: center;
     padding: 20px;
-    width: 250px;
+    flex: 1 1 clamp(250px, 30%, 400px); /* Min 250px, max 400px, adjusts dynamically */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
-.calculator {
-    background-color: #d9b99b; /* Soft warm tan */
-    border-radius: 8px;
-    text-align: center;
-    padding: 20px;
-    width: 280px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 300px;
 }
 
 .calculator-img {
@@ -49,7 +57,7 @@ body {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Scales between 1rem and 1.5rem */
     color: #4e4a40; /* Muted dark brown for text */
     margin-bottom: 15px;
 }
@@ -88,7 +96,7 @@ input, output {
     text-align: center;
 }
 
-/* Styling för knappar */
+/* Styling for buttons */
 .function_button {
     padding: 10px 20px;
     background-color: #8a7f6d;
@@ -104,10 +112,11 @@ input, output {
     background-color: #6c634e;
 }
 
-/* Layout för knapparna */
+/* Layout for buttons */
 .button_container {
     display: flex;
-    justify-content: space-between;  /* Eller space-around om du föredrar det */
+    flex-wrap: wrap; /* Buttons wrap automatically on smaller screens */
     gap: 10px;
+    justify-content: center;
     width: 100%;
 }
